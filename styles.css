@@ -2,7 +2,7 @@
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
     --secondary-blue: #1a9af7;
-    --soft-blue: #e7f5ff;
+    --soft-blue: #c9e4f8;
     --warm-black: #282623;
     --black: #201e1c;
     --grey: #bababa;
@@ -25,7 +25,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: auto;
     min-width: 320px;
     height: 334px;
     text-align: center;
@@ -135,11 +135,157 @@ main {
     color: #757575;
 }
 
-.main-tables-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25px;
+.main-currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family:"Inter", sans-serif;
 }
-
-
-
+.main-exchange-container .currency-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+.currency-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.currency-table--container table {
+    width: 100%;
+    height: 100%;
+}
+.currency-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.currency-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+.currency-table--container .table__top-right {
+    border-radius: 0 15 0 0;
+}
+.currency-table--container  .table__bottom-left {
+    border-radius: 0 0 0 15px;
+}
+.currency-table--container .table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+.currency-table--container .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.currency-table--container .down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--container .up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-up.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.currency-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+.secondary-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family:"Inter", sans-serif;
+}
+.main-exchange-container .secondary-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}
+.secondary-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.secondary-table--container table {
+    width: 100%;
+    height: 100%;
+}
+.secondary-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.secondary-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+.secondary-table--container .table__top-right {
+    border-radius: 0 15 0 0;
+}
+.secodary-table--container  .table__bottom-left {
+    border-radius: 0 0 0 15px;
+}
+.secondary-table--container .table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+.secondary-table--container .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.secondary-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+.secondary-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
